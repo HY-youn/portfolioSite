@@ -348,10 +348,44 @@ section .list-group-item a {
 }
 
 @media (max-width:767px){
+  .portfolio-title {
+    font-size: 2rem !important;
+  }
+  #textArea {
+    font-size: 1.7rem !important;
+  }
+
+.moreBtn{
+  width: 350px;
+  text-indent: 1rem;
+  font-size: 2rem;
+}
+
+.moreBtn::before {
+  content:'';
+  position: absolute;
+  display: block;
+  background-image: url(../images/next.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  top:35%;
+  left: 1rem;
+  // transform: translateY(50%);
+  rotate:90deg;
+  animation : 1.2s 0s linear infinite normal moveDown;
+}
   .about-content {
     flex-direction: column;
   }
+  .sec-info{
+    height: 100vh;
+  }
 
+  .sec-skill ul li p {
+    font-size: 0.8rem !important;
+  }
   .sec-stats .stat{
   border-right:0 !important;
   margin-bottom: 40px;
@@ -365,9 +399,102 @@ section .list-group-item a {
   }
   .video-points .col-lg-4{
     margin-bottom: 20px;
-  
+  }
+  .swiper {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    vertical-align: top;
+    margin-top: -100px;
+  }
+}
+
+@media (max-width:500px){
+  .portfolio-title {
+    position: relative;
+    font-size: 1rem !important;
+    margin-top: 25%;
+  }
+  .profile-img{
+    width: 5rem !important;
+    height: 5rem !important;
+    top: -5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #textArea {
+    font-size: 1rem !important;
   }
 
+.moreBtn{
+  width: 16rem;
+  text-indent: 1.2rem;
+  font-size: 1.5rem;
+}
+
+.moreBtn::before {
+  content:'';
+  position: absolute;
+  display: block;
+  background-image: url(../images/next.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+  top:35%;
+  left: 1rem;
+  // transform: translateY(50%);
+  rotate:90deg;
+  animation : 1.2s 0s linear infinite normal moveDown;
+}
+  .about-content {
+    flex-direction: column;
+  }
+  .sec-info{
+    height: 120vh;
+  }
+  .sec-skill {
+    height: 220vh;
+  }
+  .sec-skill ul .list-group-item h5 {
+    line-height: 0.2rem !important;
+    font-size: 1rem;
+  }
+.sec-skill ul .list-group-item p{
+  line-height: 0.1rem !important;
+  font-size: 0.5rem;
+}
+  .sec-skill ul li p {
+    font-size: 0.8rem !important;
+  }
+  .sec-skill #hireBtn {
+    font-size: 0.8rem;
+  }
+  .sec-skill #resume {
+    font-size: 0.8rem;
+  }
+  .sec-stats .stat{
+  border-right:0 !important;
+  margin-bottom: 40px;
+  border-bottom: var(--bs-dark) solid 1px;
+  padding-bottom : 20px;
+  
+  }
+  .video-points{
+    padding:0 !important;
+    text-align: center;
+  }
+  .video-points .col-lg-4{
+    margin-bottom: 20px;
+  }
+  .swiper {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    vertical-align: top;
+    margin-top: -100px;
+  }
 }
 
 @keyframes glowFx {
