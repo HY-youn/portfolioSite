@@ -289,6 +289,64 @@ section .list-group-item a {
   max-height: 760px;
 }
 
+
+@media (max-width:1256px){
+  .about-content {
+    margin-top: 2rem;
+  }
+  .about-img{
+    width: 150px;
+  }
+  .sec-info{
+    height: 70vh;
+  }
+  .sec-skill {
+    height: 130vh;
+  }
+  .skill-font {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width:1080px){
+  .about-content {
+    margin-top: 2rem;
+  }
+  .about-img{
+    width: 150px;
+  }
+  .sec-info{
+    height: 80vh;
+  }
+  .sec-skill {
+    height: 130vh;
+  }
+  .skill-font {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width:992px){
+  .about-font{
+    font-size: 1rem !important;
+  }
+  .about-content {
+    margin-top: 2rem;
+  }
+  .about-img{
+  
+    width: 150px;
+  }
+  .sec-info{
+    height: 70vh;
+  }
+  .sec-skill {
+    height: 130vh;
+  }
+  .skill-font {
+    font-size: 0.9rem !important;
+  }
+}
+
 @media (max-width:767px){
   .about-content {
     flex-direction: column;
