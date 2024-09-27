@@ -1,0 +1,27 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'VitroCore';
+  /* 폰트패밀리 호출, 비트로코어체 */
+
+}
+
+body{
+  scroll-behavior: auto;
+}
+
+.spacer{
+  height: 100px;
+}
+
+a{
+  text-decoration: none;
+  color:#fff;
+}
+
+.text-indent{
+  text-indent: 1rem;
+}

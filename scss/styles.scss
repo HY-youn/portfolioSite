@@ -1,0 +1,349 @@
+nav .nav-link {
+  color : #fff;
+}
+nav .nav-link:hover{
+  color:rgb(7,0,56)
+}
+nav .nav-link:active{
+  color:rgb(7,0,136)
+}
+
+nav .navbar-toggler-icon {
+  color : white;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 0.2rem;
+}
+
+nav {
+  transition : all 0.3s ease-in-out;
+}
+.navbar-sticky{
+  background: #333;
+  opacity:0.8;
+  z-index:11;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+header {
+  padding-top:25%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-image: url(../images/intro-bg.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-container h1{
+  font-size: 3rem;
+}
+header #textArea{
+  font-size: 1.65rem;
+  background-color: #000750;
+  width: fit-content;
+  margin: 0 auto;
+  color : #806C26;  
+  text-shadow: 1px 1px 1px rgb(7, 0, 136);
+}
+.moreBtn {
+  display: flex;
+    margin: 0 auto;
+  width: 32rem;
+  border-radius: 25px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+text-indent : 1rem;
+font-size: 3rem;
+background: rgba(0,0,0,0);
+transition: all 0.3s ease-in-out;
+}
+.moreBtn::before {
+  content:'';
+  position: absolute;
+  display: block;
+  background-image: url(../images/next.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 3rem;
+  height: 3rem;
+  top:35%;
+  left: 1rem;
+  // transform: translateY(50%);
+  rotate:90deg;
+  animation : 1.2s 0s linear infinite normal moveDown;
+}
+.moreBtn:hover{
+  background-color: #aaa;
+  color:rgb(7, 0, 136);
+}
+
+.moreBtn:hover::before {
+  animation : 1.2s 0s linear paused normal moveDown;
+  color:rgb(7, 0, 136);
+}
+
+
+
+// header 영역 끝
+.sec-info{
+  height: 60vh;
+  background-image: url(../images/about-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment:local;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.sec-info::after{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.sec-info .container{
+  position: relative;
+  z-index: 10;
+}
+
+// about 영역 끝
+.sec-skill {
+  height: 100vh;
+  background-image: url(../images/about-bg2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+
+}
+.sec-skill .container {
+  position: relative;
+  z-index: 10;
+}
+.sec-skill::before{
+  content:'';
+  top: 0;
+  left: 0;  
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity:0.1;
+  position: absolute;
+}
+.sec-skill::after{
+  content:'';
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(33,33,33,0.3), rgba(0,0,0,0%));
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  position: absolute;
+  opacity:1;
+}
+.sec-skill .text-indent{
+  text-indent: 1rem;
+}
+
+.sec-skill .content-skill li {
+  height: 70px;
+  background: rgba(0,0,0,0);
+}
+.content-skill li .progress-bar{
+  text-align: left;
+  text-indent: 7rem;
+}
+.about-img{
+  width: 200px;
+}
+section .list-group-item {
+  border-bottom: 1px solid #000;
+}
+section .list-group-item a {
+  text-decoration: none;
+  color : #000;
+}
+
+#hireBtn {
+  animation : 1s linear 0s infinite alternate both glowFx;
+}
+// skill 영역
+
+#resume:hover {
+  border: none;
+  background-color: #f90;
+}
+// resume 영역
+#portFolio .project{
+  margin: 0 auto;
+  width: 85%;
+  overflow: hidden;
+}
+#portFolio .project img{
+  transition:all 0.3s ease-in-out;
+}
+#portFolio .project img:hover{
+  transform: scale(1.1);
+  opacity: 0.6;
+}
+
+
+// main 영역 (about, info, skill 등)
+// portfolio 영역
+
+.services {
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.services::after{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+.services .container{
+  z-index:10;
+}
+
+.video-points{
+  padding:0 !important;
+  text-align: center;
+}
+.video-points .col-lg-4{
+  margin-bottom: 20px;
+
+}
+
+.video-play-button {
+  position: absolute;
+  z-index: 13;
+  top: 50%;
+  left : 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 32px;
+  height: 44px;
+  border-radius: 50%;
+  display: block;
+  box-sizing: content-box;
+  padding: 1.125rem 1.25rem 1.125rem 1.75rem;
+  cursor:pointer;
+}
+.video-play-button::before{
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left : 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  display: block;
+  padding: 1.125rem 1.25rem 1.125rem 1.75rem;
+  background-color: var(--bs-primary);
+  animation: pulseBorder 1000ms ease-in-out infinite;
+}
+
+.video-play-button::after{
+  content:'';
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left : 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: block;
+  background-color: var(--bs-primary);
+  padding: 1.125rem 1.25rem 1.125rem 1.75rem;
+}
+
+.video-play-button span{
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: 0;
+  height: 0;
+  top: 6px;
+  left: 4px;
+  // draw triangle
+  border-left: 26px solid #fff;
+  border-top : 16px solid transparent;
+  border-bottom : 16px solid transparent;
+}
+.video-modal .modal-dialog{
+  max-width: 1280px;
+  max-height: 760px;
+}
+
+@media (max-width:767px){
+  .about-content {
+    flex-direction: column;
+  }
+
+  .sec-stats .stat{
+  border-right:0 !important;
+  margin-bottom: 40px;
+  border-bottom: var(--bs-dark) solid 1px;
+  padding-bottom : 20px;
+  
+  }
+  .video-points{
+    padding:0 !important;
+    text-align: center;
+  }
+  .video-points .col-lg-4{
+    margin-bottom: 20px;
+  
+  }
+
+}
+
+@keyframes glowFx {
+  from {
+    transform: scale(100%);
+    border: 1px solid #000;
+    transition:0.3s all ease-in-out;
+  }
+  to {
+    transform: scale(105%);
+    border: 1px solid #fc0;;
+    transition : 0.3s all ease-in-out
+  }
+}
+
+@keyframes moveDown{
+  from{
+    transform :translateX(0%);
+    opacity : 1;
+  }
+  to{
+    transform: translateX(+30%);
+    opacity:0;
+    
+  }
+}
+
+@keyframes pulseBorder{
+  0%{
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100%{
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}

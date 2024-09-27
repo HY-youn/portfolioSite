@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <link rel="stylesheet" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="css/swiper.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/font.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/lightbox.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- <div class="spacer">
+  </div>
+  <button class="mx-6 my-auto px-5 btn-light bg-dark text-white rounded-4" data-bs-target="#modal1" data-bs-toggle="modal" aria-label="입력하세요">입력</button>
+  <div id="modal1" class="modal fade">
+  
+   
+    <div class="modal-dialog">
+  
+    <div class="modal-content">
+      <div class="modal-header fs-5" id="#modalLabel1">
+    
+        <div class="modal-title" id="mymodalTitle1">
+        모달창 타이틀입니다
+      </div>
+      <button class="btn-close btn-dark fs-3" data-bs-dismiss="modal"></button>
+      </div>
+    <button class="btn-dark text-white px-2 mx-auto" data-bs-dismiss="modal">해제하기</button>
+  </div>
+  </div>
+</div> -->
+<div class="spacer"></div>
+<div class="container">
+  <h1 class="bg-primary text-white px-5"><span class="replace-me">dismiss, cancel, quit</span></h1>
+</div>
+<section class="video my-6">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-column align-items-center">
+        <div class="position-relative">
+          <img src="images/project2.jpg" alt="" class="img-fluid" width="500">
+          <a class="video-btn" data-bs-toggle="modal" data-bs-target="#videoModal" data-bs-src="https://www.youtube.com/embed/vUskTJRB-SU?si=4XNERd8ElkZIxlxI">
+          <span class="video-play-button">
+            <span></span>
+          </span>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="row video-points px-6 mt-5">
+      <div class="col-lg-4">
+        <h4 class="fw-bold">10 Years of Experience</h4>
+      </div>
+    </div>
+  </div>
+  <!-- video modal dialog -->
+   <div class="video-modal">
+    <div class="modal fade" id="videoModal">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <div class="modal-title"></div>
+        </div>
+        <div class="modal-content">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/vUskTJRB-SU?si=4XNERd8ElkZIxlxI" frameborder="0" class="embed-responsive-item" id="video"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+</section>
+<div class="spacer"></div>
+<!-- Slider main container -->
+<div class="swiper mySwiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img class="swiper-image" src="./images/project1.jpg" alt="" aria-label="프로젝트1"></div>
+    <div class="swiper-slide"><img class="swiper-image" src="./images/project2.jpg" alt="" aria-label="프로젝트2"></div>
+    <div class="swiper-slide"><img class="swiper-image" src="./images/project3.jpg" alt="" aria-label="프로젝트3"></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <!-- <div class="d-flex justify-content-center gap-5">
+  <div class="swiper-button-prev">
+  </div>
+  <div class="swiper-button-next">
+  </div>
+</div> -->
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+  <script src="js/replaceme.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    
+    </script>
+</body>
+</body>
+</html>
