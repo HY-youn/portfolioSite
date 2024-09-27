@@ -106,7 +106,24 @@ if(videoModal_1 !== null) {
     video.setAttribute('src', videoSrc)
   })
 }
+if(videoModal_2 !== null) {
+  videoModal_2.addEventListener('shown.bs.modal', () => {
+    video.setAttribute('src', videoSrc + '?autoplay=1;modestbranding=1;showInfo=0');
+  });
 
+  videoModal_2.addEventListener('hide.bs.modal',() => {
+    video.setAttribute('src', videoSrc)
+  })
+}
+if(videoModal_3 !== null) {
+  videoModal_3.addEventListener('shown.bs.modal', () => {
+    video.setAttribute('src', videoSrc + '?autoplay=1;modestbranding=1;showInfo=0');
+  });
+
+  videoModal_3.addEventListener('hide.bs.modal',() => {
+    video.setAttribute('src', videoSrc)
+  })
+}
 
 // Swiper 애니메이션 구현
 var swiper = new Swiper(".mySwiper", {
