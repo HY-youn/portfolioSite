@@ -27,25 +27,35 @@ nav {
 
 
 header {
-  padding-top:25%;
+  padding-top:32%;
   height: 100vh;
   background-attachment: fixed;
-  background-image: url(../images/intro-bg.jpg);
+  background-image: url(../images/intro-bg-indigo.jpg);
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .header-container h1{
-  font-size: 3rem;
+  font-size: 3.3rem;
 }
+
+.profile-img{
+  width: 16rem !important;
+  height: 16rem !important;
+  top: 20%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index:10;
+}
+
 header #textArea{
   font-size: 1.65rem;
-  background-color: #000750;
   width: fit-content;
   margin: 0 auto;
-  color : #806C26;  
-  text-shadow: 1px 1px 1px rgb(7, 0, 136);
+  color : #faceb0; 
 }
 .moreBtn {
   display: flex;
@@ -90,7 +100,7 @@ transition: all 0.3s ease-in-out;
 // header 영역 끝
 .sec-info{
   height: 60vh;
-  background-image: url(../images/about-bg.jpg);
+  background-image: url(../images/about-bg-texture.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment:local;
@@ -110,11 +120,14 @@ transition: all 0.3s ease-in-out;
   position: relative;
   z-index: 10;
 }
+.sec-info .about-font{
+  text-align: left;
+}
 
 // about 영역 끝
 .sec-skill {
   height: 100vh;
-  background-image: url(../images/about-bg2.png);
+  background-image: url(../images/skill-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -163,6 +176,9 @@ transition: all 0.3s ease-in-out;
 }
 section .list-group-item {
   border-bottom: 1px solid #000;
+}
+content-skill .list-group-item h5 {
+  color:#fff;
 }
 section .list-group-item a {
   text-decoration: none;
