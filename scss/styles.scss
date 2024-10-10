@@ -168,8 +168,13 @@ transition: all 0.3s ease-in-out;
   background: rgba(0,0,0,0);
 }
 .content-skill li .progress-bar{
+  font-family: 'VitroPride';
+  font-weight: bold;
   text-align: left;
   text-indent: 7rem;
+}
+.content-skill li h5 {
+  text-shadow: 0px 0px 2px #000;
 }
 .about-img{
   width: 200px;
@@ -342,6 +347,16 @@ section .list-group-item a {
   }
 }
 @media (max-width:992px){
+  .profile-img{
+    width: 7rem !important;
+    height: 7rem !important;
+    top: 8%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:10;
+  }
+  
   .about-font{
     font-size: 1rem !important;
   }
